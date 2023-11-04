@@ -9,8 +9,7 @@ async def start(bot, message):
                         disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[InlineKeyboardButton("ʜᴇʟᴘ", callback_data="misc_help"),
-                                                            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_about")],[
-                            InlineKeyboardButton("Owner", url=f'http://t.me/vip_bro10")]]))  
+                                                            InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_about")]]))  
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
     await message.reply(text=script.HELP, 
